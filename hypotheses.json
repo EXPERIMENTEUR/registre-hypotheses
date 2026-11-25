@@ -4,7 +4,6 @@
  "hypotheses": [
   {
    "id": "H001",
-   "exemple": true,
    "titre": "Hunahpu et Xbalanque apparaissent ensemble",
    "enonce": "Dans le Popol Vuh, Hunahpu et Xbalanque sont cites dans les memes paragraphes plus souvent que separement.",
    "corpus": [
@@ -13,11 +12,17 @@
    "prediction": "Au moins 50 % des paragraphes qui citent l'un des deux citent aussi l'autre.",
    "refutation": "Moins de 50 % des paragraphes qui citent l'un des deux citent aussi l'autre.",
    "methode": "Graphe du Popol Vuh, livre entier : lire le poids du lien Hunahpu-Xbalanque, puis le diviser par le nombre de paragraphes ou l'un au moins des deux apparait.",
-   "donnees": "",
-   "resultat": "",
-   "limites": "Variantes d'orthographe issues de l'OCR non reconnues ; les noms absents des motifs sont invisibles ; traduction de Brasseur de Bourbourg (1861).",
-   "statut": "non_testee",
-   "historique": []
+   "donnees": "Popol Vuh, traduction francaise de Brasseur de Bourbourg (1861, issue d'un OCR), livre entier ; graphe par paragraphe de l'application sacred-texts-analyzer (commit f79aedd) ; motifs patterns_religieux.jsonl du depot sacred-texts-json-v2 (commit e1e98bb) ; mesure du 2026-11-25.",
+   "resultat": "72 paragraphes citent Hunahpu, 72 citent Xbalanque, 58 citent les deux. Part des paragraphes citant l'un des deux qui citent aussi l'autre : 58 / (72 + 72 - 58) = 58 / 86 = 67,4 %. Prediction (au moins 50 %) non refutee.",
+   "limites": "Variantes d'orthographe issues de l'OCR non reconnues ; les noms absents des motifs sont invisibles ; traduction de Brasseur de Bourbourg (1861). Resultat descriptif : Hunahpu et Xbalanque sont les jumeaux protagonistes, une forte proximite dans le texte est attendue et n'etablit aucune relation ; les paragraphes sont ceux de l'edition numerisee, pas des unites du texte quiche.",
+   "statut": "corroboree",
+   "historique": [
+    {
+     "date": "2026-11-25",
+     "statut": "corroboree",
+     "note": "Premier test par lecture du graphe : poids du lien 58 ; 72 paragraphes pour chacun des deux noms."
+    }
+   ]
   },
   {
    "id": "H002",
