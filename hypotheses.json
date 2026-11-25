@@ -1,0 +1,57 @@
+{
+ "version": 1,
+ "avertissement": "Ce registre note des hypotheses testables sur des textes. Un statut 'corroboree' signifie qu'un test n'a pas reussi a la refuter, jamais qu'elle est prouvee. Les resultats dependent de la traduction, des motifs de reperage des noms et de la qualite de l'OCR.",
+ "hypotheses": [
+  {
+   "id": "H001",
+   "exemple": true,
+   "titre": "Hunahpu et Xbalanque apparaissent ensemble",
+   "enonce": "Dans le Popol Vuh, Hunahpu et Xbalanque sont cites dans les memes paragraphes plus souvent que separement.",
+   "corpus": [
+    "Popol Vuh"
+   ],
+   "prediction": "Au moins 50 % des paragraphes qui citent l'un des deux citent aussi l'autre.",
+   "refutation": "Moins de 50 % des paragraphes qui citent l'un des deux citent aussi l'autre.",
+   "methode": "Graphe du Popol Vuh, livre entier : lire le poids du lien Hunahpu-Xbalanque, puis le diviser par le nombre de paragraphes ou l'un au moins des deux apparait.",
+   "donnees": "",
+   "resultat": "",
+   "limites": "Variantes d'orthographe issues de l'OCR non reconnues ; les noms absents des motifs sont invisibles ; traduction de Brasseur de Bourbourg (1861).",
+   "statut": "non_testee",
+   "historique": []
+  },
+  {
+   "id": "H002",
+   "exemple": true,
+   "titre": "Enkidu est surtout associe a Gilgamish",
+   "enonce": "Dans l'Epopee de Gilgamesh, Enkidu est cite plus souvent avec Gilgamish qu'avec tout autre personnage.",
+   "corpus": [
+    "Epopee de Gilgamesh"
+   ],
+   "prediction": "Le lien Enkidu-Gilgamish a le poids le plus fort parmi les liens d'Enkidu.",
+   "refutation": "Un autre personnage a un lien plus fort avec Enkidu que Gilgamish.",
+   "methode": "Graphe de l'epopee (blocs de 3 phrases) : tableau des liens les plus forts, lignes impliquant Enkidu.",
+   "donnees": "",
+   "resultat": "",
+   "limites": "Le decoupage en blocs de 3 phrases est arbitraire ; le texte n'est pas decoupe par verset ; noms absents des motifs invisibles.",
+   "statut": "non_testee",
+   "historique": []
+  },
+  {
+   "id": "H003",
+   "exemple": true,
+   "titre": "Les noms d'anges d'Henoch se concentrent dans les chapitres des Veilleurs",
+   "enonce": "Dans le Livre d'Henoch, la majorite des mentions de noms d'anges se trouve dans les chapitres 6 a 16.",
+   "corpus": [
+    "Livre d'Henoch"
+   ],
+   "prediction": "Plus de la moitie des mentions de noms d'anges tombent dans les chapitres 6 a 16.",
+   "refutation": "La moitie ou moins des mentions de noms d'anges tombent dans les chapitres 6 a 16.",
+   "methode": "Compter, chapitre par chapitre, les entites des categories CELESTIAL_BEING et NEGATIVE_ENTITY, puis comparer la part des chapitres 6 a 16.",
+   "donnees": "",
+   "resultat": "",
+   "limites": "Depend de la couverture des motifs (noms d'anges a graphie variable) ; numerotation de l'edition de Charles (1913).",
+   "statut": "non_testee",
+   "historique": []
+  }
+ ]
+}
